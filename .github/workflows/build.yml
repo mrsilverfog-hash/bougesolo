@@ -24,11 +24,10 @@ jobs:
           gradle-version: '8.8'
 
       - name: Compiler le mod
-        working-directory: antiafk
         run: gradle build
 
       - name: Publier le .jar
         uses: actions/upload-artifact@v4
         with:
           name: bougesolo-jar
-          path: antiafk/build/libs/bougesolo-*.jar
+          path: build/libs/bougesolo-*.jar
