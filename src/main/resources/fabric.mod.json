@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "bougesolo",
+  "version": "${version}",
+  "name": "BougeSolo",
+  "description": "Simule des mouvements toutes les 15 minutes pour éviter le kick AFK.",
+  "authors": ["Tropimon"],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.tropimon.bougesolo.BougeSoloClient"
+    ]
+  },
+  "mixins": ["bougesolo.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1"
+  }
+}
